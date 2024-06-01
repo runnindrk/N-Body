@@ -59,12 +59,12 @@ int main()
     // Benchmark one frame
 
     QuadTree tree(bodies);
-    // ComputeGravity(tree.root.get(), bodies, 0.5); -> this is too slow, find why
+    // ComputeGravity(tree.root.get(), bodies, 0.5); // -> this is too slow, find why
     // AdvanceTime(bodies, 0, 0.125);
 
     // Abandon matplotlib and learn a live graphics library for C++
     // Update tree size with maximums of distances of the bodies
-    
+
     /* // ------------------------------------------------------------
     // Build Tree
 

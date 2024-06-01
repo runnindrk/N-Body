@@ -7,6 +7,8 @@ include_directories(/lib/eigen)
 # Set the build directory
 set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS}-O3)
+set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS}-O3)
 
 # Specify the source directory
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)

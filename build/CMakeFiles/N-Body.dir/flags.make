@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/lib/eigen
 
-CXX_FLAGS = 
+CXX_FLAGS = -O3
 
