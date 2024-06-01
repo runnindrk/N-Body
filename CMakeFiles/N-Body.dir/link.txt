@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/N-Body.dir/src/main.cpp.o CMakeFiles/N-Body.dir/src/structures.cpp.o -o build/N-Body 

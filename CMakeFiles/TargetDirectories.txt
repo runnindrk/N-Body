@@ -1,0 +1,3 @@
+/home/diogop/N-Body_v2/CMakeFiles/N-Body.dir
+/home/diogop/N-Body_v2/CMakeFiles/edit_cache.dir
+/home/diogop/N-Body_v2/CMakeFiles/rebuild_cache.dir
