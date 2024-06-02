@@ -2,21 +2,25 @@
 
 // ----------------------------------------------------------------
 
-double ComputeDistance(double x1, double y1, double x2, double y2)
+inline double ComputeDistanceSquared(double x1, double y1, double x2, double y2)
 {
-    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    double dx = x2 - x1;
+    double dy = y2 - y1;
+    return dx * dx + dy * dy;
 }
 
-void ComputeGravitationalForce(const Particle &p1, const Particle &p2, double &forceX,
-                               double &forceY)
+inline void ComputeGravitationalForce(const Particle &p1, const Particle &p2, double &forceX,
+                                      double &forceY)
 {
-    double G = 0.1;
+    constexpr double G = 0.1;
+    constexpr double smoothingFactor = 0.1 * 0.1;
 
     double dx = p2.xPosition - p1.xPosition;
     double dy = p2.yPosition - p1.yPosition;
 
-    double distance = ComputeDistance(p1.xPosition, p1.yPosition, p2.xPosition, p2.yPosition);
-    double force = G * p1.mass * p2.mass / (distance * distance + 0.1 * 0.1); // smothing infinities
+    double distanceSquared = dx * dx + dy * dy + smoothingFactor;
+    double distance = std::sqrt(distanceSquared);
+    double force = G * p1.mass * p2.mass / distanceSquared;
 
     forceX = force * dx / distance;
     forceY = force * dy / distance;
@@ -24,33 +28,41 @@ void ComputeGravitationalForce(const Particle &p1, const Particle &p2, double &f
 
 // ----------------------------------------------------------------
 
-void ComputeGravity(TreeNode *node, std::vector<Particle> &bodies, double threshold)
+int ComputeGravity(TreeNode *node, std::vector<Particle> &bodies, double threshold)
 {
-    for (int i = 0; i < bodies.size(); i++)
+    int gravityNodesUsed = 0;
+
+    for (Particle &body : bodies)
     {
-        bodies[i].xForce = 0;
-        bodies[i].yForce = 0;
-        ComputeForce(node, bodies[i], threshold);
+        body.xForce = 0;
+        body.yForce = 0;
+        ComputeForce(node, body, threshold, gravityNodesUsed);
     }
+
+    return gravityNodesUsed;
 }
 
-void ComputeForce(TreeNode *node, Particle &body, double threshold)
+void ComputeForce(TreeNode *node, Particle &body, double threshold, int &gravityNodesUsed)
 {
-    if (!node->nBodies)
+    if (node->nBodies == 0)
         return;
 
     if (body.xPosition == node->xCenterOfMass && body.yPosition == node->yCenterOfMass)
         return;
 
-    if (node->isLeaf &&
-       (body.xPosition != node->xCenterOfMass || body.yPosition != node->yCenterOfMass))
+    double s = node->size;
+    double dSquared = ComputeDistanceSquared(body.xPosition, body.yPosition, node->xCenterOfMass, node->yCenterOfMass);
+    double d = std::sqrt(dSquared);
+
+    if ((node->isLeaf &&
+         (body.xPosition != node->xCenterOfMass || body.yPosition != node->yCenterOfMass)) ||
+        (s / d < threshold))
     {
+        gravityNodesUsed += 1;
         node->isForceComputation = true;
 
-        double fx = 0;
-        double fy = 0;
-
         Particle pseudoBody = {node->totalMass, node->xCenterOfMass, node->yCenterOfMass, 0, 0};
+        double fx = 0, fy = 0;
         ComputeGravitationalForce(body, pseudoBody, fx, fy);
         body.xForce += fx;
         body.yForce += fy;
@@ -58,30 +70,10 @@ void ComputeForce(TreeNode *node, Particle &body, double threshold)
 
     else
     {
-        double s = node->size;
-        double d = ComputeDistance(body.xPosition, body.yPosition, node->xCenterOfMass,
-                                   node->yCenterOfMass);
-
-        if (s / d < threshold)
-        {
-            node->isForceComputation = true;
-
-            double fx = 0;
-            double fy = 0;
-
-            Particle pseudoBody = {node->totalMass, node->xCenterOfMass, node->yCenterOfMass, 0, 0};
-            ComputeGravitationalForce(body, pseudoBody, fx, fy);
-            body.xForce += fx;
-            body.yForce += fy;
-        }
-
-        else
-        {
-            ComputeForce(node->firstQuadrant.get(), body, threshold);
-            ComputeForce(node->secondQuadrant.get(), body, threshold);
-            ComputeForce(node->thirdQuadrant.get(), body, threshold);
-            ComputeForce(node->fourthQuadrant.get(), body, threshold);
-        }
+        ComputeForce(node->firstQuadrant.get(), body, threshold, gravityNodesUsed);
+        ComputeForce(node->secondQuadrant.get(), body, threshold, gravityNodesUsed);
+        ComputeForce(node->thirdQuadrant.get(), body, threshold, gravityNodesUsed);
+        ComputeForce(node->fourthQuadrant.get(), body, threshold, gravityNodesUsed);
     }
 }
 

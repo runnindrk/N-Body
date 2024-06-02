@@ -18,8 +18,9 @@ int main()
     //                                {1, 10, 0, -1, 0},
     //                                {1, -10, 0, -1, 0}};
 
-    std::vector<Particle> bodies = CircularGaussianDistribution(10000);
-
+    // std::vector<Particle> bodies = CircularGaussianDistribution(5000);
+    std::vector<Particle> bodies = MassiveCentralObjectAndRing(1000);
+    
     // A bug exists when particles are at the same place while constructing the tree, 
     // possible infinite recursion?
     // ------------------------------------------------------------
@@ -58,9 +59,13 @@ int main()
     // ------------------------------------------------------------
     // Benchmark one frame
 
-    QuadTree tree(bodies);
-    // ComputeGravity(tree.root.get(), bodies, 0.5); // -> this is too slow, find why
+    // QuadTree tree(bodies);
+    // ComputeGravity(tree.root.get(), bodies, 0.5);
     // AdvanceTime(bodies, 0, 0.125);
+
+    // std::cout << tree.numberOfNodes << "    " << a << "\n";
+
+    render(bodies);
 
     // Abandon matplotlib and learn a live graphics library for C++
     // Update tree size with maximums of distances of the bodies

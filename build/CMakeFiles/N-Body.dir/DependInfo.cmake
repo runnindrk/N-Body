@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/diogop/N-Body_v2/src/initialState.cpp" "CMakeFiles/N-Body.dir/src/initialState.cpp.o" "gcc" "CMakeFiles/N-Body.dir/src/initialState.cpp.o.d"
   "/home/diogop/N-Body_v2/src/main.cpp" "CMakeFiles/N-Body.dir/src/main.cpp.o" "gcc" "CMakeFiles/N-Body.dir/src/main.cpp.o.d"
   "/home/diogop/N-Body_v2/src/output.cpp" "CMakeFiles/N-Body.dir/src/output.cpp.o" "gcc" "CMakeFiles/N-Body.dir/src/output.cpp.o.d"
+  "/home/diogop/N-Body_v2/src/render.cpp" "CMakeFiles/N-Body.dir/src/render.cpp.o" "gcc" "CMakeFiles/N-Body.dir/src/render.cpp.o.d"
   "/home/diogop/N-Body_v2/src/rungeKutta.cpp" "CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o" "gcc" "CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o.d"
   "/home/diogop/N-Body_v2/src/structures.cpp" "CMakeFiles/N-Body.dir/src/structures.cpp.o" "gcc" "CMakeFiles/N-Body.dir/src/structures.cpp.o.d"
   )

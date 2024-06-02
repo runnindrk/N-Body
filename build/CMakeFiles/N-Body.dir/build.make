@@ -139,10 +139,24 @@ CMakeFiles/N-Body.dir/src/output.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/output.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body_v2/src/output.cpp -o CMakeFiles/N-Body.dir/src/output.cpp.s
 
+CMakeFiles/N-Body.dir/src/render.cpp.o: CMakeFiles/N-Body.dir/flags.make
+CMakeFiles/N-Body.dir/src/render.cpp.o: ../src/render.cpp
+CMakeFiles/N-Body.dir/src/render.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/N-Body.dir/src/render.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/render.cpp.o -MF CMakeFiles/N-Body.dir/src/render.cpp.o.d -o CMakeFiles/N-Body.dir/src/render.cpp.o -c /home/diogop/N-Body_v2/src/render.cpp
+
+CMakeFiles/N-Body.dir/src/render.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/render.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body_v2/src/render.cpp > CMakeFiles/N-Body.dir/src/render.cpp.i
+
+CMakeFiles/N-Body.dir/src/render.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/render.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body_v2/src/render.cpp -o CMakeFiles/N-Body.dir/src/render.cpp.s
+
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: ../src/rungeKutta.cpp
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o -MF CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o.d -o CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o -c /home/diogop/N-Body_v2/src/rungeKutta.cpp
 
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/N-Body.dir/src/rungeKutta.cpp.s: cmake_force
 CMakeFiles/N-Body.dir/src/structures.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp
 CMakeFiles/N-Body.dir/src/structures.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/N-Body.dir/src/structures.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/N-Body.dir/src/structures.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/structures.cpp.o -MF CMakeFiles/N-Body.dir/src/structures.cpp.o.d -o CMakeFiles/N-Body.dir/src/structures.cpp.o -c /home/diogop/N-Body_v2/src/structures.cpp
 
 CMakeFiles/N-Body.dir/src/structures.cpp.i: cmake_force
@@ -174,6 +188,7 @@ N__Body_OBJECTS = \
 "CMakeFiles/N-Body.dir/src/initialState.cpp.o" \
 "CMakeFiles/N-Body.dir/src/main.cpp.o" \
 "CMakeFiles/N-Body.dir/src/output.cpp.o" \
+"CMakeFiles/N-Body.dir/src/render.cpp.o" \
 "CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o" \
 "CMakeFiles/N-Body.dir/src/structures.cpp.o"
 
@@ -185,11 +200,15 @@ N-Body: CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o
 N-Body: CMakeFiles/N-Body.dir/src/initialState.cpp.o
 N-Body: CMakeFiles/N-Body.dir/src/main.cpp.o
 N-Body: CMakeFiles/N-Body.dir/src/output.cpp.o
+N-Body: CMakeFiles/N-Body.dir/src/render.cpp.o
 N-Body: CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o
 N-Body: CMakeFiles/N-Body.dir/src/structures.cpp.o
 N-Body: CMakeFiles/N-Body.dir/build.make
+N-Body: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
+N-Body: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
+N-Body: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 N-Body: CMakeFiles/N-Body.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable N-Body"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/diogop/N-Body_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable N-Body"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/N-Body.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

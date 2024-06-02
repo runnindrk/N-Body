@@ -22,6 +22,7 @@ class QuadTree
     public:
 
     std::unique_ptr<TreeNode> root;
+    uint64_t numberOfNodes{};
 };
 
 #endif

@@ -11,6 +11,7 @@
 #include "barnesHutTree.hpp"
 #include "gravitationalForce.hpp"
 #include "rungeKutta.hpp"
+#include "render.hpp"
 #include "output.hpp"
 
 // ----------------------------------------------------------------

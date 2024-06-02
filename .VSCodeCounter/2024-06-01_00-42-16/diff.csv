@@ -1,8 +1,0 @@
-"filename", "language", "C++", "comment", "blank", "total"
-"/home/diogop/N-Body_v2/src/gravitationalForce.cpp", "C++", 61, 2, 16, 79
-"/home/diogop/N-Body_v2/src/gravitationalForce.hpp", "C++", 3, 0, 0, 3
-"/home/diogop/N-Body_v2/src/initialState.cpp", "C++", 0, -2, -2, -4
-"/home/diogop/N-Body_v2/src/main.cpp", "C++", 12, 6, 7, 25
-"/home/diogop/N-Body_v2/src/output.cpp", "C++", 13, 2, 1, 16
-"/home/diogop/N-Body_v2/src/output.hpp", "C++", 2, 0, 0, 2
-"Total", "-", 91, 8, 22, 121

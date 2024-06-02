@@ -23,6 +23,7 @@ void QuadTree::InsertBody(TreeNode* node, Particle* body, bool newBody)
     {
         if (!node->nBodies)
         {
+            numberOfNodes += 1;
             node->nBodies += 1;
             node->body = body;
             node->totalMass += node->body->mass;

@@ -1,14 +1,15 @@
 #ifndef INITIAL_STATE_HPP
 #define INITIAL_STATE_HPP
 
+#include "structures.hpp"
 #include <vector>
 #include <random>
+#include <cmath>
 #include <set>
-
-#include "structures.hpp"
 
 // ----------------------------------------------------------------
 
 std::vector<Particle> CircularGaussianDistribution(int numberOfParticles);
+std::vector<Particle> MassiveCentralObjectAndRing(int numberOfParticles);
 
 #endif

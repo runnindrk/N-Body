@@ -1,0 +1,6 @@
+"filename", "language", "C++", "comment", "blank", "total"
+"/home/diogop/N-Body_v2/src/barnesHutTree.cpp", "C++", 1, 0, 0, 1
+"/home/diogop/N-Body_v2/src/barnesHutTree.hpp", "C++", 1, 0, 0, 1
+"/home/diogop/N-Body_v2/src/gravitationalForce.cpp", "C++", -6, 0, -2, -8
+"/home/diogop/N-Body_v2/src/main.cpp", "C++", 3, -2, 1, 2
+"Total", "-", -1, -2, -1, -4

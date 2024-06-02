@@ -249,6 +249,30 @@ src/output.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/N-Body.dir/build.make CMakeFiles/N-Body.dir/src/output.cpp.s
 .PHONY : src/output.cpp.s
 
+src/render.o: src/render.cpp.o
+.PHONY : src/render.o
+
+# target to build an object file
+src/render.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/N-Body.dir/build.make CMakeFiles/N-Body.dir/src/render.cpp.o
+.PHONY : src/render.cpp.o
+
+src/render.i: src/render.cpp.i
+.PHONY : src/render.i
+
+# target to preprocess a source file
+src/render.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/N-Body.dir/build.make CMakeFiles/N-Body.dir/src/render.cpp.i
+.PHONY : src/render.cpp.i
+
+src/render.s: src/render.cpp.s
+.PHONY : src/render.s
+
+# target to generate assembly for a file
+src/render.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/N-Body.dir/build.make CMakeFiles/N-Body.dir/src/render.cpp.s
+.PHONY : src/render.cpp.s
+
 src/rungeKutta.o: src/rungeKutta.cpp.o
 .PHONY : src/rungeKutta.o
 
@@ -321,6 +345,9 @@ help:
 	@echo "... src/output.o"
 	@echo "... src/output.i"
 	@echo "... src/output.s"
+	@echo "... src/render.o"
+	@echo "... src/render.i"
+	@echo "... src/render.s"
 	@echo "... src/rungeKutta.o"
 	@echo "... src/rungeKutta.i"
 	@echo "... src/rungeKutta.s"

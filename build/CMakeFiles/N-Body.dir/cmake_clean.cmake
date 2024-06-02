@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/N-Body.dir/src/main.cpp.o.d"
   "CMakeFiles/N-Body.dir/src/output.cpp.o"
   "CMakeFiles/N-Body.dir/src/output.cpp.o.d"
+  "CMakeFiles/N-Body.dir/src/render.cpp.o"
+  "CMakeFiles/N-Body.dir/src/render.cpp.o.d"
   "CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o"
   "CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o.d"
   "CMakeFiles/N-Body.dir/src/structures.cpp.o"

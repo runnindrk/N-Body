@@ -1,14 +1,14 @@
 #ifndef GRAVITATIONAL_FORCE_HPP
 #define GRAVITATIONAL_FORCE_HPP
 
-#include <iostream>
-#include <cmath>
-#include <vector>
 #include "structures.hpp"
+#include <cmath>
+#include <iostream>
+#include <vector>
 
 // ----------------------------------------------------------------
 
-void ComputeGravity(TreeNode *node, std::vector<Particle> &bodies, double threshold);
-void ComputeForce(TreeNode *node, Particle &body, double threshold);
+int ComputeGravity(TreeNode *node, std::vector<Particle> &bodies, double threshold);
+void ComputeForce(TreeNode *node, Particle &body, double threshold, int &gravityNodesUsed);
 
 #endif
