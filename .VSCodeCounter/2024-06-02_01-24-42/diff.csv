@@ -1,0 +1,8 @@
+"filename", "language", "C++", "comment", "blank", "total"
+"/home/diogop/N-Body_v2/src/initialState.cpp", "C++", 40, 3, 11, 54
+"/home/diogop/N-Body_v2/src/initialState.hpp", "C++", 2, 0, -1, 1
+"/home/diogop/N-Body_v2/src/main.cpp", "C++", -3, 5, 1, 3
+"/home/diogop/N-Body_v2/src/main.hpp", "C++", 1, 0, 0, 1
+"/home/diogop/N-Body_v2/src/render.cpp", "C++", 34, 2, 10, 46
+"/home/diogop/N-Body_v2/src/render.hpp", "C++", 11, 1, 5, 17
+"Total", "-", 85, 11, 26, 122

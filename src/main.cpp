@@ -19,7 +19,7 @@ int main()
     //                                {1, -10, 0, -1, 0}};
 
     // std::vector<Particle> bodies = CircularGaussianDistribution(5000);
-    std::vector<Particle> bodies = MassiveCentralObjectAndRing(1000);
+    std::vector<Particle> bodies = MassiveCentralObjectAndRing(2500);
     
     // A bug exists when particles are at the same place while constructing the tree, 
     // possible infinite recursion?

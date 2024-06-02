@@ -1,21 +1,21 @@
 # Summary
 
-Date : 2024-06-01 01:25:57
+Date : 2024-06-02 01:24:42
 
 Directory /home/diogop/N-Body_v2/src
 
-Total : 12 files,  329 codes, 39 comments, 108 blanks, all 476 lines
+Total : 16 files,  456 codes, 126 comments, 141 blanks, all 723 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C++ | 12 | 329 | 39 | 108 | 476 |
+| C++ | 16 | 456 | 126 | 141 | 723 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 12 | 329 | 39 | 108 | 476 |
+| . | 16 | 456 | 126 | 141 | 723 |
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
