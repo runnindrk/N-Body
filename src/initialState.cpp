@@ -91,3 +91,14 @@ std::vector<Particle> MassiveCentralObjectAndRing(int numberOfParticles)
 
     return state;
 }
+
+std::vector<Particle> SunEarthMoonSystem()
+{
+    std::vector<Particle> state{};
+    
+    state.push_back(Particle(100000, 0, 0, 0, 0));
+    state.push_back(Particle(100, 0, 1024, 3.125, 0));
+    state.push_back(Particle(1, 0, 1034, 3.125 + 1, 0));
+
+    return state;
+}

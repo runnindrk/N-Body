@@ -11,5 +11,6 @@
 
 std::vector<Particle> CircularGaussianDistribution(int numberOfParticles);
 std::vector<Particle> MassiveCentralObjectAndRing(int numberOfParticles);
+std::vector<Particle> SunEarthMoonSystem();
 
 #endif
