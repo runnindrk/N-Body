@@ -1,4 +1,4 @@
-# Install script for directory: /home/diogop/N-Body_v2
+# Install script for directory: /home/runnindrk/Projects/N-Body
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/diogop/N-Body_v2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/runnindrk/Projects/N-Body/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

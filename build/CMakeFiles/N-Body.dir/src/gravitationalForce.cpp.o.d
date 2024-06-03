@@ -1,9 +1,9 @@
 CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o: \
- /home/diogop/N-Body_v2/src/gravitationalForce.cpp \
+ /home/runnindrk/Projects/N-Body/src/gravitationalForce.cpp \
  /usr/include/stdc-predef.h \
- /home/diogop/N-Body_v2/src/gravitationalForce.hpp \
- /home/diogop/N-Body_v2/src/structures.hpp /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_algobase.h \
+ /home/runnindrk/Projects/N-Body/src/gravitationalForce.hpp \
+ /home/runnindrk/Projects/N-Body/src/structures.hpp \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

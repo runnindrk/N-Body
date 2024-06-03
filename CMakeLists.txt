@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 project(N-Body)
 
 # Add libraries
-include_directories(/lib/eigen)
+include_directories(/home/runnindrk/.local/lib/eigen)
 
 # Set the build directory
 set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/build)
@@ -12,6 +12,7 @@ set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS}-O3)
 
 # Required
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+# find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
 # Specify the source directory
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)

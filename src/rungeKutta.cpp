@@ -40,5 +40,6 @@ void ParticleTimeStep(Particle& body, double t, double h)
 void AdvanceTime(std::vector<Particle>& bodies, double t, double h)
 {
     for (int i = 0; i < bodies.size(); i++)
-        ParticleTimeStep(bodies[i], t, h); 
+        if (!bodies[i].isCollided)
+            ParticleTimeStep(bodies[i], t, h); 
 }

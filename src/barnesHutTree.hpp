@@ -16,8 +16,9 @@ class QuadTree
     private:
 
     void InsertBody(Particle& body);
-    void InsertBody(TreeNode* node, Particle* body, bool newBody);
+    void InsertBody(TreeNode* node, Particle* body, int depth, bool newBody);
     void SubdivideNode(TreeNode* node);
+    void Collision(TreeNode *node, Particle *body);
 
     public:
 

@@ -2,12 +2,16 @@
 #define STRUCTURES_HPP
 
 #include <memory>
+#include <cmath>
 
 // ----------------------------------------------------------------
 
 struct Particle
 {
+    bool isCollided;
+    double density;
     double mass;
+    double radius;
     double xPosition;
     double yPosition;
     double xVelocity;
@@ -21,7 +25,10 @@ struct Particle
              double xVelocity, 
              double yVelocity) :
     
+    isCollided(false),
+    density(1 / (4 * M_PI)),
     mass(mass),
+    radius(std::sqrt(mass/(density * M_PI))),
     xPosition(xPosition),
     yPosition(yPosition),
     xVelocity(xVelocity),

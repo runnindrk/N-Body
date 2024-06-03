@@ -34,9 +34,12 @@ int ComputeGravity(TreeNode *node, std::vector<Particle> &bodies, double thresho
 
     for (Particle &body : bodies)
     {
-        body.xForce = 0;
-        body.yForce = 0;
-        ComputeForce(node, body, threshold, gravityNodesUsed);
+        if (!body.isCollided)
+        {
+            body.xForce = 0;
+            body.yForce = 0;
+            ComputeForce(node, body, threshold, gravityNodesUsed);
+        }
     }
 
     return gravityNodesUsed;

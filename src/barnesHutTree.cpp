@@ -7,17 +7,18 @@ QuadTree::QuadTree(std::vector<Particle>& bodies)
     root = std::make_unique<TreeNode>(0, 0, 0, 0, 16384);
     
     for (int i = 0; i < bodies.size(); i++)
-        InsertBody(bodies[i]);
+        if (!bodies[i].isCollided)
+            InsertBody(bodies[i]);
 }
 
 // ----------------------------------------------------------------
 
 void QuadTree::InsertBody(Particle& body)
 {
-    InsertBody(root.get(), &body, true);
+    InsertBody(root.get(), &body, 0, true);
 }
 
-void QuadTree::InsertBody(TreeNode* node, Particle* body, bool newBody)
+void QuadTree::InsertBody(TreeNode* node, Particle* body, int depth, bool newBody)
 {
     if (node->isLeaf)
     {
@@ -26,16 +27,22 @@ void QuadTree::InsertBody(TreeNode* node, Particle* body, bool newBody)
             numberOfNodes += 1;
             node->nBodies += 1;
             node->body = body;
-            node->totalMass += node->body->mass;
+            node->totalMass = node->body->mass;
             node->xCenterOfMass = node->body->xPosition;
             node->yCenterOfMass = node->body->yPosition;
         }
 
         else
         {
-            SubdivideNode(node);
-            InsertBody(node, node->body, false);
-            InsertBody(node, body, true);
+            if (depth >= 18)
+                Collision(node, body);
+
+            else 
+            {
+                SubdivideNode(node);
+                InsertBody(node, node->body, depth + 1, false);
+                InsertBody(node, body, depth + 1, true);
+            }
         }
     }
 
@@ -44,26 +51,26 @@ void QuadTree::InsertBody(TreeNode* node, Particle* body, bool newBody)
         if (newBody)
         {
             node->nBodies += 1;
-            node->totalMass += body->mass;
             node->xCenterOfMass =
                 (node->xCenterOfMass * node->totalMass + body->xPosition * body->mass) /
                 (node->totalMass + body->mass);
             node->yCenterOfMass =
                 (node->yCenterOfMass * node->totalMass + body->yPosition * body->mass) /
                 (node->totalMass + body->mass);
+            node->totalMass += body->mass;
         }
 
         if (body->xPosition < node->xNodeCenter && body->yPosition >= node->yNodeCenter)
-            InsertBody(node->firstQuadrant.get(), body, newBody);
+            InsertBody(node->firstQuadrant.get(), body, depth + 1, newBody);
 
         else if (body->xPosition >= node->xNodeCenter && body->yPosition >= node->yNodeCenter)
-            InsertBody(node->secondQuadrant.get(), body, newBody);
+            InsertBody(node->secondQuadrant.get(), body, depth + 1, newBody);
 
         else if (body->xPosition >= node->xNodeCenter && body->yPosition < node->yNodeCenter)
-            InsertBody(node->thirdQuadrant.get(), body, newBody);
+            InsertBody(node->thirdQuadrant.get(), body, depth + 1, newBody);
 
         else
-            InsertBody(node->fourthQuadrant.get(), body, newBody);
+            InsertBody(node->fourthQuadrant.get(), body, depth + 1, newBody);
     }
 }
 
@@ -81,4 +88,25 @@ void QuadTree::SubdivideNode(TreeNode *node)
     node->isLeaf = false;
 }
 
+void QuadTree::Collision(TreeNode *node, Particle *body)
+{
+    // This only happens when there is only one particle in the node.
+    
+    body->isCollided = true;
+
+    node->xCenterOfMass =
+        (node->xCenterOfMass * (node->totalMass + body->mass)) /
+        (node->totalMass + body->mass);
+    node->yCenterOfMass =
+        (node->yCenterOfMass * (node->totalMass + body->mass)) /
+        (node->totalMass + body->mass);
+    node->totalMass += body->mass;
+
+    node->body->xVelocity = (node->body->mass * node->body->xVelocity + body->mass * body->xVelocity) /
+                            (node->body->mass + body->mass);
+    node->body->yVelocity = (node->body->mass * node->body->yVelocity + body->mass * body->yVelocity) /
+                            (node->body->mass + body->mass);
+    node->body->mass += body->mass;
+    node->body->radius = std::sqrt(node->body->mass/(node->body->density * M_PI));
+}
 // ----------------------------------------------------------------
