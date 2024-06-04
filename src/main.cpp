@@ -18,8 +18,8 @@ int main()
     //                                {1, 10, 0, -1, 0},
     //                                {1, -10, 0, -1, 0}};
 
-    // std::vector<Particle> bodies = CircularGaussianDistribution(5000);
-    std::vector<Particle> bodies = MassiveCentralObjectAndRing(2500);
+    // std::vector<Particle> bodies = CircularGaussianDistribution(2500);
+    std::vector<Particle> bodies = MassiveCentralObjectAndRing(10000);
     // std::vector<Particle> bodies = SunEarthMoonSystem();
     
     // A bug exists when particles are at the same place while constructing the tree, 

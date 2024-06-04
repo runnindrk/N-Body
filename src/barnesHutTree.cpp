@@ -34,7 +34,7 @@ void QuadTree::InsertBody(TreeNode* node, Particle* body, int depth, bool newBod
 
         else
         {
-            if (depth >= 18)
+            if (16384.0 / (pow(2, depth)) <= 0.04 * (node->body->radius + body->radius))
                 Collision(node, body);
 
             else 
@@ -107,6 +107,6 @@ void QuadTree::Collision(TreeNode *node, Particle *body)
     node->body->yVelocity = (node->body->mass * node->body->yVelocity + body->mass * body->yVelocity) /
                             (node->body->mass + body->mass);
     node->body->mass += body->mass;
-    node->body->radius = std::sqrt(node->body->mass/(node->body->density * M_PI));
+    node->body->radius = pow(node->body->mass, 1.0/3.7);
 }
 // ----------------------------------------------------------------

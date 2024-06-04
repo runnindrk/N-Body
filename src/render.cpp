@@ -4,9 +4,10 @@
 
 void render(std::vector<Particle> &bodies)
 {
-    sf::RenderWindow window(sf::VideoMode(1200, 1200), "Barnes-Hut Simulation");
+    sf::RenderWindow window(sf::VideoMode(1500, 1500), "Barnes-Hut Simulation");
 
-    const float scale = 0.35;
+    const float scale = 0.25;
+    const float radiusScale = 1;
     const float centerX = 0;
     const float centerY = 0;
 
@@ -42,10 +43,10 @@ void render(std::vector<Particle> &bodies)
         {
             if (!body.isCollided)
             {
-                sf::CircleShape shape(body.radius*scale); // Particle radius
+                sf::CircleShape shape(body.radius*radiusScale); // Particle radius
 
-                float scaledX = (body.xPosition - centerX) * scale + windowCenterX; 
-                float scaledY = (body.yPosition - centerY) * scale + windowCenterY;
+                float scaledX = (body.xPosition - centerX) * scale + windowCenterX - shape.getRadius(); 
+                float scaledY = (body.yPosition - centerY) * scale + windowCenterY - shape.getRadius();
                 shape.setPosition(scaledX, scaledY);
                 window.draw(shape);
             }

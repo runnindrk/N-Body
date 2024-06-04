@@ -9,7 +9,6 @@
 struct Particle
 {
     bool isCollided;
-    double density;
     double mass;
     double radius;
     double xPosition;
@@ -26,9 +25,8 @@ struct Particle
              double yVelocity) :
     
     isCollided(false),
-    density(1 / (4 * M_PI)),
     mass(mass),
-    radius(std::sqrt(mass/(density * M_PI))),
+    radius(pow(mass, 1.0/3.7)),
     xPosition(xPosition),
     yPosition(yPosition),
     xVelocity(xVelocity),

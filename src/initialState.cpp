@@ -52,15 +52,12 @@ std::vector<Particle> MassiveCentralObjectAndRing(int numberOfParticles)
     std::random_device dev;
     std::mt19937 rng(dev());
     std::normal_distribution<double> distVelocity(0, 1);
-    std::normal_distribution<double> distRadius(1000, 20);
+    std::normal_distribution<double> distRadius(2000, 500);
     std::uniform_real_distribution<double> distAngle(0.0, 2 * M_PI);
     std::normal_distribution<double> distMass(1, 0.1);
     
     double massCentral = 1000000;
-    Particle centralMass = Particle(massCentral, 0, 0, 0, 0);
-    centralMass.density *= 25000;
-    centralMass.radius = std::sqrt(centralMass.mass/(centralMass.density * M_PI));
-    state.push_back(centralMass);
+    state.push_back(Particle(massCentral, 0, 0, 0, 0));
 
     std::set<std::pair<double, double>> uniquePositions;
 
