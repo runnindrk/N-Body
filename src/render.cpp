@@ -6,7 +6,7 @@ void render(std::vector<Particle> &bodies)
 {
     sf::RenderWindow window(sf::VideoMode(1500, 1500), "Barnes-Hut Simulation");
 
-    const float scale = 0.25;
+    const float scale = 0.15;
     const float radiusScale = 1;
     const float centerX = 0;
     const float centerY = 0;
