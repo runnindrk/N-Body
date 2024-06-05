@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/runnindrk/.local/lib/eigen
 
-CXX_FLAGS = -O3
+CXX_FLAGS = -O3 -fopenmp
 

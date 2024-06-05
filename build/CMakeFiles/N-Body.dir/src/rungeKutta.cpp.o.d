@@ -209,6 +209,8 @@ CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/MKL_support.h \
+ /usr/include/c++/11/atomic \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/functional \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \

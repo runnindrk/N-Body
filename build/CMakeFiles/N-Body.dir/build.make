@@ -207,6 +207,8 @@ N-Body: CMakeFiles/N-Body.dir/build.make
 N-Body: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 N-Body: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 N-Body: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+N-Body: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
+N-Body: /usr/lib/x86_64-linux-gnu/libpthread.a
 N-Body: CMakeFiles/N-Body.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable N-Body"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/N-Body.dir/link.txt --verbose=$(VERBOSE)

@@ -485,7 +485,8 @@ CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o: ../src/gravitationalForce.cp
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h
 
 CMakeFiles/N-Body.dir/src/initialState.cpp.o: ../src/initialState.cpp \
   /usr/include/stdc-predef.h \
@@ -1008,6 +1009,7 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/erase_if.h \
   ../src/barnesHutTree.hpp \
   ../src/gravitationalForce.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   ../src/rungeKutta.hpp \
   /home/runnindrk/.local/lib/eigen/Eigen/Dense \
   /home/runnindrk/.local/lib/eigen/Eigen/Core \
@@ -1024,6 +1026,7 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
   /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/c++/11/atomic \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
@@ -1347,6 +1350,9 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h \
   ../src/output.hpp
 
 CMakeFiles/N-Body.dir/src/output.cpp.o: ../src/output.cpp \
@@ -1841,6 +1847,7 @@ CMakeFiles/N-Body.dir/src/render.cpp.o: ../src/render.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../src/gravitationalForce.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   ../src/rungeKutta.hpp \
   /home/runnindrk/.local/lib/eigen/Eigen/Dense \
   /home/runnindrk/.local/lib/eigen/Eigen/Core \
@@ -1857,6 +1864,7 @@ CMakeFiles/N-Body.dir/src/render.cpp.o: ../src/render.cpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
   /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/c++/11/atomic \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
@@ -2183,7 +2191,10 @@ CMakeFiles/N-Body.dir/src/render.cpp.o: ../src/render.cpp \
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h
 
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: ../src/rungeKutta.cpp \
   /usr/include/stdc-predef.h \
@@ -2437,6 +2448,8 @@ CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: ../src/rungeKutta.cpp \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc \
   /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/c++/11/atomic \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
@@ -2862,7 +2875,11 @@ CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp \
 
 ../src/render.cpp:
 
-../src/output.cpp:
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/chrono:
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
 
@@ -2932,6 +2949,10 @@ CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp \
 
 /usr/include/SFML/System/Vector3.hpp:
 
+/usr/include/SFML/Window/Cursor.hpp:
+
+/usr/include/SFML/System/Vector2.hpp:
+
 ../src/gravitationalForce.hpp:
 
 /usr/include/SFML/System/ThreadLocalPtr.inl:
@@ -2977,6 +2998,10 @@ CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp \
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/bits/refwrap.h:
+
+../src/output.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
@@ -3656,6 +3681,8 @@ CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp \
 
 /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h:
 
+/usr/include/c++/11/atomic:
+
 /usr/include/SFML/System/Time.hpp:
 
 /usr/include/c++/11/bits/hashtable.h:
@@ -3935,10 +3962,6 @@ CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp \
 /home/runnindrk/.local/lib/eigen/Eigen/src/LU/Determinant.h:
 
 /home/runnindrk/.local/lib/eigen/Eigen/Cholesky:
-
-/usr/include/SFML/Window/Cursor.hpp:
-
-/usr/include/SFML/System/Vector2.hpp:
 
 /home/runnindrk/.local/lib/eigen/Eigen/src/Core/GenericPacketMath.h:
 

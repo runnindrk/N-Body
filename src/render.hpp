@@ -5,10 +5,10 @@
 #include "barnesHutTree.hpp"
 #include "gravitationalForce.hpp"
 #include "rungeKutta.hpp"
-
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <cmath>
+#include <chrono>
 
 // ----------------------------------------------------------------
 

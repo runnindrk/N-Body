@@ -32,6 +32,8 @@ int ComputeGravity(TreeNode *node, std::vector<Particle> &bodies, double thresho
 {
     int gravityNodesUsed = 0;
 
+    omp_set_num_threads(16);
+    #pragma omp parallel for reduction(+:gravityNodesUsed)
     for (Particle &body : bodies)
     {
         if (!body.isCollided)

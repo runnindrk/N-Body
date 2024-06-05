@@ -12,6 +12,7 @@ set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS}-O3)
 
 # Required
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+find_package(OpenMP REQUIRED)
 # find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
 # Specify the source directory
@@ -22,4 +23,5 @@ file(GLOB_RECURSE SOURCES "${SOURCE_DIR}/*.cpp")
 
 # Add executable target
 add_executable(N-Body ${SOURCES})
-target_link_libraries(N-Body sfml-graphics sfml-window sfml-system)
+target_link_libraries(N-Body PRIVATE sfml-graphics sfml-window sfml-system)
+target_link_libraries(N-Body PRIVATE OpenMP::OpenMP_CXX)
