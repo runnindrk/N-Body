@@ -39,6 +39,8 @@ void ParticleTimeStep(Particle& body, double t, double h)
 
 void AdvanceTime(std::vector<Particle>& bodies, double t, double h)
 {
+    omp_set_num_threads(16);
+    #pragma omp parallel for
     for (int i = 0; i < bodies.size(); i++)
         if (!bodies[i].isCollided)
             ParticleTimeStep(bodies[i], t, h); 

@@ -1,9 +1,8 @@
 CMakeFiles/N-Body.dir/src/initialState.cpp.o: \
- /home/runnindrk/Projects/N-Body/src/initialState.cpp \
- /usr/include/stdc-predef.h \
- /home/runnindrk/Projects/N-Body/src/initialState.hpp \
- /home/runnindrk/Projects/N-Body/src/structures.hpp \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
+ /home/diogop/N-Body/src/initialState.cpp /usr/include/stdc-predef.h \
+ /home/diogop/N-Body/src/initialState.hpp \
+ /home/diogop/N-Body/src/structures.hpp /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -153,10 +152,11 @@ CMakeFiles/N-Body.dir/src/initialState.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/iostream \
- /usr/include/c++/11/ostream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
- /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /home/diogop/N-Body/src/gravitationalForce.hpp \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
@@ -198,8 +198,9 @@ CMakeFiles/N-Body.dir/src/initialState.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/random \
- /usr/include/c++/11/bits/random.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
+ /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \

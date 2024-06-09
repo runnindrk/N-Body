@@ -1,6 +1,5 @@
-CMakeFiles/N-Body.dir/src/main.cpp.o: \
- /home/runnindrk/Projects/N-Body/src/main.cpp /usr/include/stdc-predef.h \
- /home/runnindrk/Projects/N-Body/src/main.hpp \
+CMakeFiles/N-Body.dir/src/main.cpp.o: /home/diogop/N-Body/src/main.cpp \
+ /usr/include/stdc-predef.h /home/diogop/N-Body/src/main.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -179,9 +178,8 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/runnindrk/Projects/N-Body/src/structures.hpp \
- /usr/include/c++/11/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /home/diogop/N-Body/src/structures.hpp /usr/include/c++/11/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -203,7 +201,9 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/runnindrk/Projects/N-Body/src/initialState.hpp \
+ /home/diogop/N-Body/src/initialState.hpp \
+ /home/diogop/N-Body/src/gravitationalForce.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
@@ -215,23 +215,20 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/runnindrk/Projects/N-Body/src/barnesHutTree.hpp \
- /home/runnindrk/Projects/N-Body/src/gravitationalForce.hpp \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
- /home/runnindrk/Projects/N-Body/src/rungeKutta.hpp \
- /home/runnindrk/.local/lib/eigen/Eigen/Dense \
- /home/runnindrk/.local/lib/eigen/Eigen/Core \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/DisableStupidWarnings.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/Macros.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/ConfigureVectorization.h \
+ /home/diogop/N-Body/src/barnesHutTree.hpp \
+ /home/diogop/N-Body/src/rungeKutta.hpp /usr/lib/eigen/Eigen/Dense \
+ /usr/lib/eigen/Eigen/Core \
+ /usr/lib/eigen/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/lib/eigen/Eigen/src/Core/util/Macros.h \
+ /usr/lib/eigen/Eigen/src/Core/util/../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Core/util/ConfigureVectorization.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/complex \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/MKL_support.h \
+ /usr/lib/eigen/Eigen/src/Core/util/MKL_support.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/cstddef \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
@@ -255,217 +252,211 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/Constants.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/Meta.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/Assert.h \
- /usr/include/c++/11/cassert /usr/include/assert.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/ForwardDeclarations.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/StaticAssert.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/XprHelper.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/Memory.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/IntegralConstant.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/Serializer.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/SymbolicIndex.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/EmulateArray.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/MoreMeta.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/NumTraits.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/MathFunctions.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/RandomImpl.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/GenericPacketMath.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/MathFunctionsImpl.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/ConjHelper.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/../../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/Half.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/BFloat16.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/SSE/PacketMath.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/SSE/../../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/SSE/Complex.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/Settings.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/TernaryFunctors.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/BinaryFunctors.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/UnaryFunctors.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/NullaryFunctors.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/StlFunctors.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/functors/AssignmentFunctors.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/IndexedViewHelper.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/ReshapedHelper.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/ArithmeticSequence.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/IO.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/DenseCoeffsBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/DenseBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/BlockMethods.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/IndexedViewMethods.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/ReshapedMethods.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/ReshapedMethods.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/MatrixBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/EigenBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Product.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CoreEvaluators.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/AssignEvaluator.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Assign.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/ArrayBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.inc \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/BlasUtil.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/DenseStorage.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/NestByValue.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/ReturnByValue.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/NoAlias.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/PlainObjectBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Matrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Array.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CwiseTernaryOp.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CwiseBinaryOp.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CwiseUnaryOp.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CwiseNullaryOp.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CwiseUnaryView.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Dot.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/StableNorm.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Stride.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/MapBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Map.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Ref.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Block.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/VectorBlock.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/IndexedView.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Reshaped.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Transpose.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/DiagonalMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Diagonal.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/DiagonalProduct.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/SkewSymmetricMatrix3.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Redux.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Visitor.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Fuzzy.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Swap.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CommaInitializer.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/GeneralProduct.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Solve.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Inverse.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/SolverBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/PermutationMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Transpositions.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/TriangularMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/SelfAdjointView.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/DeviceWrapper.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/Parallelizer.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/ProductEvaluators.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/GeneralMatrixVector.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/SolveTriangular.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/SelfadjointProduct.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/TriangularMatrixVector.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/products/TriangularSolverVector.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/BandMatrix.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/CoreIterators.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/ConditionEstimator.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Select.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/VectorwiseOp.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/PartialReduxEvaluator.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Random.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Replicate.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/Reverse.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/ArrayWrapper.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/StlIterators.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/GlobalFunctions.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h \
- /home/runnindrk/.local/lib/eigen/Eigen/LU \
- /home/runnindrk/.local/lib/eigen/Eigen/src/misc/Kernel.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/misc/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/misc/Image.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/FullPivLU.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/PartialPivLU.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/Determinant.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/InverseImpl.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/arch/InverseSize4.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/LU/arch/../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/Cholesky \
- /home/runnindrk/.local/lib/eigen/Eigen/Jacobi \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Jacobi/Jacobi.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Jacobi/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Cholesky/LLT.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Cholesky/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Cholesky/LDLT.h \
- /home/runnindrk/.local/lib/eigen/Eigen/QR \
- /home/runnindrk/.local/lib/eigen/Eigen/Householder \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Householder/Householder.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Householder/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Householder/HouseholderSequence.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Householder/BlockHouseholder.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/QR/HouseholderQR.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/QR/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/QR/FullPivHouseholderQR.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/QR/ColPivHouseholderQR.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
- /home/runnindrk/.local/lib/eigen/Eigen/SVD \
- /home/runnindrk/.local/lib/eigen/Eigen/src/misc/RealSvd2x2.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/SVD/UpperBidiagonalization.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/SVD/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/SVD/SVDBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/SVD/JacobiSVD.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/SVD/BDCSVD.h \
- /home/runnindrk/.local/lib/eigen/Eigen/Geometry \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/OrthoMethods.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/EulerAngles.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Homogeneous.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/RotationBase.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Rotation2D.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Quaternion.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/AngleAxis.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Transform.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Translation.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Scaling.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Hyperplane.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/ParametrizedLine.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/AlignedBox.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/Umeyama.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Geometry/arch/../InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/Eigenvalues \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/./InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/RealSchur.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/././InternalHeaderCheck.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/EigenSolver.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/./RealSchur.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/./Tridiagonalization.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/ComplexSchur.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/./ComplexSchur.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/RealQZ.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/./RealQZ.h \
- /home/runnindrk/.local/lib/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/runnindrk/Projects/N-Body/src/render.hpp \
- /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
- /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
- /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
+ /usr/lib/eigen/Eigen/src/Core/util/Constants.h \
+ /usr/lib/eigen/Eigen/src/Core/util/Meta.h \
+ /usr/lib/eigen/Eigen/src/Core/util/Assert.h /usr/include/c++/11/cassert \
+ /usr/include/assert.h \
+ /usr/lib/eigen/Eigen/src/Core/util/ForwardDeclarations.h \
+ /usr/lib/eigen/Eigen/src/Core/util/StaticAssert.h \
+ /usr/lib/eigen/Eigen/src/Core/util/XprHelper.h \
+ /usr/lib/eigen/Eigen/src/Core/util/Memory.h \
+ /usr/lib/eigen/Eigen/src/Core/util/IntegralConstant.h \
+ /usr/lib/eigen/Eigen/src/Core/util/Serializer.h \
+ /usr/lib/eigen/Eigen/src/Core/util/SymbolicIndex.h \
+ /usr/lib/eigen/Eigen/src/Core/util/EmulateArray.h \
+ /usr/lib/eigen/Eigen/src/Core/util/MoreMeta.h \
+ /usr/lib/eigen/Eigen/src/Core/NumTraits.h \
+ /usr/lib/eigen/Eigen/src/Core/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Core/MathFunctions.h \
+ /usr/lib/eigen/Eigen/src/Core/RandomImpl.h \
+ /usr/lib/eigen/Eigen/src/Core/GenericPacketMath.h \
+ /usr/lib/eigen/Eigen/src/Core/MathFunctionsImpl.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/../../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/Half.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/BFloat16.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/SSE/../../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/SSE/Complex.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/Settings.h \
+ /usr/lib/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/TernaryFunctors.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/BinaryFunctors.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/UnaryFunctors.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/NullaryFunctors.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/StlFunctors.h \
+ /usr/lib/eigen/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /usr/lib/eigen/Eigen/src/Core/util/IndexedViewHelper.h \
+ /usr/lib/eigen/Eigen/src/Core/util/ReshapedHelper.h \
+ /usr/lib/eigen/Eigen/src/Core/ArithmeticSequence.h \
+ /usr/lib/eigen/Eigen/src/Core/IO.h \
+ /usr/lib/eigen/Eigen/src/Core/DenseCoeffsBase.h \
+ /usr/lib/eigen/Eigen/src/Core/DenseBase.h \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/BlockMethods.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/IndexedViewMethods.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/ReshapedMethods.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/ReshapedMethods.inc \
+ /usr/lib/eigen/Eigen/src/Core/MatrixBase.h \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.inc \
+ /usr/lib/eigen/Eigen/src/Core/EigenBase.h \
+ /usr/lib/eigen/Eigen/src/Core/Product.h \
+ /usr/lib/eigen/Eigen/src/Core/CoreEvaluators.h \
+ /usr/lib/eigen/Eigen/src/Core/AssignEvaluator.h \
+ /usr/lib/eigen/Eigen/src/Core/Assign.h \
+ /usr/lib/eigen/Eigen/src/Core/ArrayBase.h \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.inc \
+ /usr/lib/eigen/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.inc \
+ /usr/lib/eigen/Eigen/src/Core/util/BlasUtil.h \
+ /usr/lib/eigen/Eigen/src/Core/DenseStorage.h \
+ /usr/lib/eigen/Eigen/src/Core/NestByValue.h \
+ /usr/lib/eigen/Eigen/src/Core/ReturnByValue.h \
+ /usr/lib/eigen/Eigen/src/Core/NoAlias.h \
+ /usr/lib/eigen/Eigen/src/Core/PlainObjectBase.h \
+ /usr/lib/eigen/Eigen/src/Core/Matrix.h \
+ /usr/lib/eigen/Eigen/src/Core/Array.h \
+ /usr/lib/eigen/Eigen/src/Core/CwiseTernaryOp.h \
+ /usr/lib/eigen/Eigen/src/Core/CwiseBinaryOp.h \
+ /usr/lib/eigen/Eigen/src/Core/CwiseUnaryOp.h \
+ /usr/lib/eigen/Eigen/src/Core/CwiseNullaryOp.h \
+ /usr/lib/eigen/Eigen/src/Core/CwiseUnaryView.h \
+ /usr/lib/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /usr/lib/eigen/Eigen/src/Core/Dot.h \
+ /usr/lib/eigen/Eigen/src/Core/StableNorm.h \
+ /usr/lib/eigen/Eigen/src/Core/Stride.h \
+ /usr/lib/eigen/Eigen/src/Core/MapBase.h \
+ /usr/lib/eigen/Eigen/src/Core/Map.h /usr/lib/eigen/Eigen/src/Core/Ref.h \
+ /usr/lib/eigen/Eigen/src/Core/Block.h \
+ /usr/lib/eigen/Eigen/src/Core/VectorBlock.h \
+ /usr/lib/eigen/Eigen/src/Core/IndexedView.h \
+ /usr/lib/eigen/Eigen/src/Core/Reshaped.h \
+ /usr/lib/eigen/Eigen/src/Core/Transpose.h \
+ /usr/lib/eigen/Eigen/src/Core/DiagonalMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/Diagonal.h \
+ /usr/lib/eigen/Eigen/src/Core/DiagonalProduct.h \
+ /usr/lib/eigen/Eigen/src/Core/SkewSymmetricMatrix3.h \
+ /usr/lib/eigen/Eigen/src/Core/Redux.h \
+ /usr/lib/eigen/Eigen/src/Core/Visitor.h \
+ /usr/lib/eigen/Eigen/src/Core/Fuzzy.h \
+ /usr/lib/eigen/Eigen/src/Core/Swap.h \
+ /usr/lib/eigen/Eigen/src/Core/CommaInitializer.h \
+ /usr/lib/eigen/Eigen/src/Core/GeneralProduct.h \
+ /usr/lib/eigen/Eigen/src/Core/Solve.h \
+ /usr/lib/eigen/Eigen/src/Core/Inverse.h \
+ /usr/lib/eigen/Eigen/src/Core/SolverBase.h \
+ /usr/lib/eigen/Eigen/src/Core/PermutationMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/Transpositions.h \
+ /usr/lib/eigen/Eigen/src/Core/TriangularMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/SelfAdjointView.h \
+ /usr/lib/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /usr/lib/eigen/Eigen/src/Core/products/../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Core/DeviceWrapper.h \
+ /usr/lib/eigen/Eigen/src/Core/products/Parallelizer.h \
+ /usr/lib/eigen/Eigen/src/Core/ProductEvaluators.h \
+ /usr/lib/eigen/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /usr/lib/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/SolveTriangular.h \
+ /usr/lib/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /usr/lib/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /usr/lib/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/products/SelfadjointProduct.h \
+ /usr/lib/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /usr/lib/eigen/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /usr/lib/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/products/TriangularSolverVector.h \
+ /usr/lib/eigen/Eigen/src/Core/BandMatrix.h \
+ /usr/lib/eigen/Eigen/src/Core/CoreIterators.h \
+ /usr/lib/eigen/Eigen/src/Core/ConditionEstimator.h \
+ /usr/lib/eigen/Eigen/src/Core/Select.h \
+ /usr/lib/eigen/Eigen/src/Core/VectorwiseOp.h \
+ /usr/lib/eigen/Eigen/src/Core/PartialReduxEvaluator.h \
+ /usr/lib/eigen/Eigen/src/Core/Random.h \
+ /usr/lib/eigen/Eigen/src/Core/Replicate.h \
+ /usr/lib/eigen/Eigen/src/Core/Reverse.h \
+ /usr/lib/eigen/Eigen/src/Core/ArrayWrapper.h \
+ /usr/lib/eigen/Eigen/src/Core/StlIterators.h \
+ /usr/lib/eigen/Eigen/src/Core/GlobalFunctions.h \
+ /usr/lib/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /usr/lib/eigen/Eigen/LU /usr/lib/eigen/Eigen/src/misc/Kernel.h \
+ /usr/lib/eigen/Eigen/src/misc/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/misc/Image.h \
+ /usr/lib/eigen/Eigen/src/LU/FullPivLU.h \
+ /usr/lib/eigen/Eigen/src/LU/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/LU/PartialPivLU.h \
+ /usr/lib/eigen/Eigen/src/LU/Determinant.h \
+ /usr/lib/eigen/Eigen/src/LU/InverseImpl.h \
+ /usr/lib/eigen/Eigen/src/LU/arch/InverseSize4.h \
+ /usr/lib/eigen/Eigen/src/LU/arch/../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/Cholesky /usr/lib/eigen/Eigen/Jacobi \
+ /usr/lib/eigen/Eigen/src/Jacobi/Jacobi.h \
+ /usr/lib/eigen/Eigen/src/Jacobi/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Cholesky/LLT.h \
+ /usr/lib/eigen/Eigen/src/Cholesky/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Cholesky/LDLT.h /usr/lib/eigen/Eigen/QR \
+ /usr/lib/eigen/Eigen/Householder \
+ /usr/lib/eigen/Eigen/src/Householder/Householder.h \
+ /usr/lib/eigen/Eigen/src/Householder/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Householder/HouseholderSequence.h \
+ /usr/lib/eigen/Eigen/src/Householder/BlockHouseholder.h \
+ /usr/lib/eigen/Eigen/src/QR/HouseholderQR.h \
+ /usr/lib/eigen/Eigen/src/QR/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/QR/FullPivHouseholderQR.h \
+ /usr/lib/eigen/Eigen/src/QR/ColPivHouseholderQR.h \
+ /usr/lib/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /usr/lib/eigen/Eigen/SVD /usr/lib/eigen/Eigen/src/misc/RealSvd2x2.h \
+ /usr/lib/eigen/Eigen/src/SVD/UpperBidiagonalization.h \
+ /usr/lib/eigen/Eigen/src/SVD/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/SVD/SVDBase.h \
+ /usr/lib/eigen/Eigen/src/SVD/JacobiSVD.h \
+ /usr/lib/eigen/Eigen/src/SVD/BDCSVD.h /usr/lib/eigen/Eigen/Geometry \
+ /usr/lib/eigen/Eigen/src/Geometry/OrthoMethods.h \
+ /usr/lib/eigen/Eigen/src/Geometry/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Geometry/EulerAngles.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Homogeneous.h \
+ /usr/lib/eigen/Eigen/src/Geometry/RotationBase.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Rotation2D.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Quaternion.h \
+ /usr/lib/eigen/Eigen/src/Geometry/AngleAxis.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Transform.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Translation.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Scaling.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Hyperplane.h \
+ /usr/lib/eigen/Eigen/src/Geometry/ParametrizedLine.h \
+ /usr/lib/eigen/Eigen/src/Geometry/AlignedBox.h \
+ /usr/lib/eigen/Eigen/src/Geometry/Umeyama.h \
+ /usr/lib/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+ /usr/lib/eigen/Eigen/src/Geometry/arch/../InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/Eigenvalues \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/./InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/././InternalHeaderCheck.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/EigenSolver.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/./RealSchur.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/./Tridiagonalization.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/./ComplexSchur.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/./RealQZ.h \
+ /usr/lib/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/diogop/N-Body/src/render.hpp /usr/include/SFML/Graphics.hpp \
+ /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
+ /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
+ /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/Time.hpp \
+ /usr/include/SFML/System/Err.hpp \
  /usr/include/SFML/System/FileInputStream.hpp \
  /usr/include/SFML/System/InputStream.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
@@ -531,4 +522,4 @@ CMakeFiles/N-Body.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
- /home/runnindrk/Projects/N-Body/src/output.hpp
+ /home/diogop/N-Body/src/output.hpp

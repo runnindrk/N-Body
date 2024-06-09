@@ -2,6 +2,7 @@
 #define INITIAL_STATE_HPP
 
 #include "structures.hpp"
+#include "gravitationalForce.hpp"
 #include <iostream>
 #include <vector>
 #include <random>

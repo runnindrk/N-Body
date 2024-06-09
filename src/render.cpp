@@ -35,12 +35,12 @@ void render(std::vector<Particle> &bodies)
         // FPS Calculation and Display
         deltaTime = fpsClock.restart().asSeconds();
         frameCount++;
-
+        
         // Measure time for each step and the total time
         auto start = std::chrono::high_resolution_clock::now();
 
         auto t1_start = start;
-        QuadTree tree(bodies);
+        QuadTree tree(0, 0, 16384, bodies);
         auto t1_end = std::chrono::high_resolution_clock::now();
 
         auto t2_start = t1_end;

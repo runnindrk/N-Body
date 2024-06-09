@@ -2,23 +2,30 @@
 
 // ----------------------------------------------------------------
 
-QuadTree::QuadTree(std::vector<Particle>& bodies)
+QuadTree::QuadTree() {};
+
+QuadTree::QuadTree(double xNodeCenter, double yNodeCenter, double size,
+                   std::vector<Particle> &bodies)
 {
-    root = std::make_unique<TreeNode>(0, 0, 0, 0, 16384);
-    
+    root = std::make_unique<TreeNode>(xNodeCenter, yNodeCenter, 0, 0, size);
+
     for (int i = 0; i < bodies.size(); i++)
-        if (!bodies[i].isCollided)
-            InsertBody(bodies[i]);
+        if (bodies[i].xPosition > (xNodeCenter - size / 2.0) &&
+            bodies[i].yPosition > (yNodeCenter - size / 2.0) &&
+            bodies[i].xPosition < (xNodeCenter + size / 2.0) &&
+            bodies[i].yPosition < (yNodeCenter + size / 2.0))
+            if (!bodies[i].isCollided)
+                InsertBody(bodies[i]);
 }
 
 // ----------------------------------------------------------------
 
-void QuadTree::InsertBody(Particle& body)
+void QuadTree::InsertBody(Particle &body)
 {
     InsertBody(root.get(), &body, 0, true);
 }
 
-void QuadTree::InsertBody(TreeNode* node, Particle* body, int depth, bool newBody)
+void QuadTree::InsertBody(TreeNode *node, Particle *body, int depth, bool newBody)
 {
     if (node->isLeaf)
     {
@@ -37,7 +44,7 @@ void QuadTree::InsertBody(TreeNode* node, Particle* body, int depth, bool newBod
             if (16384.0 / (pow(2, depth)) <= 0.4 * (node->body->radius + body->radius))
                 Collision(node, body);
 
-            else 
+            else
             {
                 SubdivideNode(node);
                 InsertBody(node, node->body, depth + 1, false);
@@ -91,22 +98,49 @@ void QuadTree::SubdivideNode(TreeNode *node)
 void QuadTree::Collision(TreeNode *node, Particle *body)
 {
     // This only happens when there is only one particle in the node.
-    
+
     body->isCollided = true;
 
     node->xCenterOfMass =
-        (node->xCenterOfMass * (node->totalMass + body->mass)) /
-        (node->totalMass + body->mass);
+        (node->xCenterOfMass * (node->totalMass + body->mass)) / (node->totalMass + body->mass);
     node->yCenterOfMass =
-        (node->yCenterOfMass * (node->totalMass + body->mass)) /
-        (node->totalMass + body->mass);
+        (node->yCenterOfMass * (node->totalMass + body->mass)) / (node->totalMass + body->mass);
     node->totalMass += body->mass;
 
-    node->body->xVelocity = (node->body->mass * node->body->xVelocity + body->mass * body->xVelocity) /
-                            (node->body->mass + body->mass);
-    node->body->yVelocity = (node->body->mass * node->body->yVelocity + body->mass * body->yVelocity) /
-                            (node->body->mass + body->mass);
+    node->body->xVelocity =
+        (node->body->mass * node->body->xVelocity + body->mass * body->xVelocity) /
+        (node->body->mass + body->mass);
+    node->body->yVelocity =
+        (node->body->mass * node->body->yVelocity + body->mass * body->yVelocity) /
+        (node->body->mass + body->mass);
     node->body->mass += body->mass;
-    node->body->radius = pow(node->body->mass, 1.0/3.7);
+    node->body->radius = pow(node->body->mass, 1.0 / 3.7);
 }
 // ----------------------------------------------------------------
+
+ParallelQuadTree::ParallelQuadTree(int numThreads, double xNodeCenter, double yNodeCenter,
+                                   double size, std::vector<Particle> &bodies) 
+{
+    std::vector<int> xCenters(numThreads);
+    std::vector<int> yCenters(numThreads);
+    std::vector<QuadTree> parallelComputedQuadTrees(numThreads);
+    int numDivisions = (int)std::sqrt(numThreads);
+    double parallelSize = size / numDivisions;
+
+    omp_set_num_threads(numThreads);
+    #pragma omp parallel for collapse(2)
+    for (int i = 0; i < numDivisions; i++) 
+        for (int j = 0; j < numDivisions; j++) 
+        {
+            double xCenter = i;
+            double yCenter = yNodeCenter + size/2 - (j + 0.5) * parallelSize;
+            QuadTree tree(xCenter, yCenter, parallelSize, bodies);
+            
+            parallelComputedQuadTrees[i * numDivisions + j] = std::move(tree);
+            xCenters[i * numDivisions + j] = xCenter;
+            yCenters[i * numDivisions + j] = yCenter;
+        }
+
+    for (int i = 0; i < numThreads; i ++)
+        std::cout << xCenters[i] << "   " << yCenters[i] << "\n";
+}

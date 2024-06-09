@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 project(N-Body)
 
 # Add libraries
-include_directories(/home/runnindrk/.local/lib/eigen)
+include_directories(/usr/lib/eigen)
 
 # Set the build directory
 set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/build)

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/runnindrk/Projects/N-Body
+CMAKE_SOURCE_DIR = /home/diogop/N-Body
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/runnindrk/Projects/N-Body/build
+CMAKE_BINARY_DIR = /home/diogop/N-Body/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/N-Body.dir/depend.make
@@ -72,114 +72,114 @@ include CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o: ../src/barnesHutTree.cpp
 CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o -MF CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o.d -o CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o -c /home/runnindrk/Projects/N-Body/src/barnesHutTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o -MF CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o.d -o CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.o -c /home/diogop/N-Body/src/barnesHutTree.cpp
 
 CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/barnesHutTree.cpp > CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/barnesHutTree.cpp > CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.i
 
 CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/barnesHutTree.cpp -o CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/barnesHutTree.cpp -o CMakeFiles/N-Body.dir/src/barnesHutTree.cpp.s
 
 CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o: ../src/gravitationalForce.cpp
 CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o -MF CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o.d -o CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o -c /home/runnindrk/Projects/N-Body/src/gravitationalForce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o -MF CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o.d -o CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.o -c /home/diogop/N-Body/src/gravitationalForce.cpp
 
 CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/gravitationalForce.cpp > CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/gravitationalForce.cpp > CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.i
 
 CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/gravitationalForce.cpp -o CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/gravitationalForce.cpp -o CMakeFiles/N-Body.dir/src/gravitationalForce.cpp.s
 
 CMakeFiles/N-Body.dir/src/initialState.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/initialState.cpp.o: ../src/initialState.cpp
 CMakeFiles/N-Body.dir/src/initialState.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N-Body.dir/src/initialState.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/initialState.cpp.o -MF CMakeFiles/N-Body.dir/src/initialState.cpp.o.d -o CMakeFiles/N-Body.dir/src/initialState.cpp.o -c /home/runnindrk/Projects/N-Body/src/initialState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N-Body.dir/src/initialState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/initialState.cpp.o -MF CMakeFiles/N-Body.dir/src/initialState.cpp.o.d -o CMakeFiles/N-Body.dir/src/initialState.cpp.o -c /home/diogop/N-Body/src/initialState.cpp
 
 CMakeFiles/N-Body.dir/src/initialState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/initialState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/initialState.cpp > CMakeFiles/N-Body.dir/src/initialState.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/initialState.cpp > CMakeFiles/N-Body.dir/src/initialState.cpp.i
 
 CMakeFiles/N-Body.dir/src/initialState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/initialState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/initialState.cpp -o CMakeFiles/N-Body.dir/src/initialState.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/initialState.cpp -o CMakeFiles/N-Body.dir/src/initialState.cpp.s
 
 CMakeFiles/N-Body.dir/src/main.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/N-Body.dir/src/main.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N-Body.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/main.cpp.o -MF CMakeFiles/N-Body.dir/src/main.cpp.o.d -o CMakeFiles/N-Body.dir/src/main.cpp.o -c /home/runnindrk/Projects/N-Body/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N-Body.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/main.cpp.o -MF CMakeFiles/N-Body.dir/src/main.cpp.o.d -o CMakeFiles/N-Body.dir/src/main.cpp.o -c /home/diogop/N-Body/src/main.cpp
 
 CMakeFiles/N-Body.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/main.cpp > CMakeFiles/N-Body.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/main.cpp > CMakeFiles/N-Body.dir/src/main.cpp.i
 
 CMakeFiles/N-Body.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/main.cpp -o CMakeFiles/N-Body.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/main.cpp -o CMakeFiles/N-Body.dir/src/main.cpp.s
 
 CMakeFiles/N-Body.dir/src/output.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/output.cpp.o: ../src/output.cpp
 CMakeFiles/N-Body.dir/src/output.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N-Body.dir/src/output.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/output.cpp.o -MF CMakeFiles/N-Body.dir/src/output.cpp.o.d -o CMakeFiles/N-Body.dir/src/output.cpp.o -c /home/runnindrk/Projects/N-Body/src/output.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N-Body.dir/src/output.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/output.cpp.o -MF CMakeFiles/N-Body.dir/src/output.cpp.o.d -o CMakeFiles/N-Body.dir/src/output.cpp.o -c /home/diogop/N-Body/src/output.cpp
 
 CMakeFiles/N-Body.dir/src/output.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/output.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/output.cpp > CMakeFiles/N-Body.dir/src/output.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/output.cpp > CMakeFiles/N-Body.dir/src/output.cpp.i
 
 CMakeFiles/N-Body.dir/src/output.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/output.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/output.cpp -o CMakeFiles/N-Body.dir/src/output.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/output.cpp -o CMakeFiles/N-Body.dir/src/output.cpp.s
 
 CMakeFiles/N-Body.dir/src/render.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/render.cpp.o: ../src/render.cpp
 CMakeFiles/N-Body.dir/src/render.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/N-Body.dir/src/render.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/render.cpp.o -MF CMakeFiles/N-Body.dir/src/render.cpp.o.d -o CMakeFiles/N-Body.dir/src/render.cpp.o -c /home/runnindrk/Projects/N-Body/src/render.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/N-Body.dir/src/render.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/render.cpp.o -MF CMakeFiles/N-Body.dir/src/render.cpp.o.d -o CMakeFiles/N-Body.dir/src/render.cpp.o -c /home/diogop/N-Body/src/render.cpp
 
 CMakeFiles/N-Body.dir/src/render.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/render.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/render.cpp > CMakeFiles/N-Body.dir/src/render.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/render.cpp > CMakeFiles/N-Body.dir/src/render.cpp.i
 
 CMakeFiles/N-Body.dir/src/render.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/render.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/render.cpp -o CMakeFiles/N-Body.dir/src/render.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/render.cpp -o CMakeFiles/N-Body.dir/src/render.cpp.s
 
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: ../src/rungeKutta.cpp
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o -MF CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o.d -o CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o -c /home/runnindrk/Projects/N-Body/src/rungeKutta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o -MF CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o.d -o CMakeFiles/N-Body.dir/src/rungeKutta.cpp.o -c /home/diogop/N-Body/src/rungeKutta.cpp
 
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/rungeKutta.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/rungeKutta.cpp > CMakeFiles/N-Body.dir/src/rungeKutta.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/rungeKutta.cpp > CMakeFiles/N-Body.dir/src/rungeKutta.cpp.i
 
 CMakeFiles/N-Body.dir/src/rungeKutta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/rungeKutta.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/rungeKutta.cpp -o CMakeFiles/N-Body.dir/src/rungeKutta.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/rungeKutta.cpp -o CMakeFiles/N-Body.dir/src/rungeKutta.cpp.s
 
 CMakeFiles/N-Body.dir/src/structures.cpp.o: CMakeFiles/N-Body.dir/flags.make
 CMakeFiles/N-Body.dir/src/structures.cpp.o: ../src/structures.cpp
 CMakeFiles/N-Body.dir/src/structures.cpp.o: CMakeFiles/N-Body.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/N-Body.dir/src/structures.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/structures.cpp.o -MF CMakeFiles/N-Body.dir/src/structures.cpp.o.d -o CMakeFiles/N-Body.dir/src/structures.cpp.o -c /home/runnindrk/Projects/N-Body/src/structures.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/N-Body.dir/src/structures.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/N-Body.dir/src/structures.cpp.o -MF CMakeFiles/N-Body.dir/src/structures.cpp.o.d -o CMakeFiles/N-Body.dir/src/structures.cpp.o -c /home/diogop/N-Body/src/structures.cpp
 
 CMakeFiles/N-Body.dir/src/structures.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N-Body.dir/src/structures.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runnindrk/Projects/N-Body/src/structures.cpp > CMakeFiles/N-Body.dir/src/structures.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogop/N-Body/src/structures.cpp > CMakeFiles/N-Body.dir/src/structures.cpp.i
 
 CMakeFiles/N-Body.dir/src/structures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N-Body.dir/src/structures.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runnindrk/Projects/N-Body/src/structures.cpp -o CMakeFiles/N-Body.dir/src/structures.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogop/N-Body/src/structures.cpp -o CMakeFiles/N-Body.dir/src/structures.cpp.s
 
 # Object files for target N-Body
 N__Body_OBJECTS = \
@@ -210,7 +210,7 @@ N-Body: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 N-Body: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 N-Body: /usr/lib/x86_64-linux-gnu/libpthread.a
 N-Body: CMakeFiles/N-Body.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runnindrk/Projects/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable N-Body"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/diogop/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable N-Body"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/N-Body.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -222,6 +222,6 @@ CMakeFiles/N-Body.dir/clean:
 .PHONY : CMakeFiles/N-Body.dir/clean
 
 CMakeFiles/N-Body.dir/depend:
-	cd /home/runnindrk/Projects/N-Body/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/runnindrk/Projects/N-Body /home/runnindrk/Projects/N-Body /home/runnindrk/Projects/N-Body/build /home/runnindrk/Projects/N-Body/build /home/runnindrk/Projects/N-Body/build/CMakeFiles/N-Body.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/diogop/N-Body/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/diogop/N-Body /home/diogop/N-Body /home/diogop/N-Body/build /home/diogop/N-Body/build /home/diogop/N-Body/build/CMakeFiles/N-Body.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/N-Body.dir/depend
 

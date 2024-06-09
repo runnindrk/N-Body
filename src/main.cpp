@@ -66,6 +66,7 @@ int main()
 
     // std::cout << tree.numberOfNodes << "    " << a << "\n";
 
+    ParallelQuadTree exampleTree(16, 0, 0, 16384, bodies);
     render(bodies);
 
     // Abandon matplotlib and learn a live graphics library for C++

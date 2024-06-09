@@ -30,11 +30,10 @@ std::vector<Particle> CircularGaussianDistribution(int numberOfParticles)
         }
         
         // Tangential speed
-        double G = 0.1;
         double particleMass = 1;
         double distance = std::sqrt(xPosition * xPosition + yPosition * yPosition);
         double massIntegral = numberOfParticles * particleMass * (std::sqrt(M_PI) / 2) * std::erf(distance);
-        double speed = std::sqrt((G * massIntegral) / distance);
+        double speed = std::sqrt((GRAVITATIONAL_CONSTANT * massIntegral) / distance);
         double xVelocity = -yPosition * speed / distance;
         double yVelocity = xPosition * speed / distance;
 
@@ -77,8 +76,7 @@ std::vector<Particle> MassiveCentralObjectAndRing(int numberOfParticles)
         }
         
         // Tangential speed
-        double G = 0.1;
-        double speed = std::sqrt((G * massCentral) / rPosition);
+        double speed = std::sqrt((GRAVITATIONAL_CONSTANT * massCentral) / rPosition);
         double xVelocity = -yPosition * speed / rPosition;
         double yVelocity = xPosition * speed / rPosition;
 

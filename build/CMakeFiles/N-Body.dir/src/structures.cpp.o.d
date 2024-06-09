@@ -1,8 +1,7 @@
 CMakeFiles/N-Body.dir/src/structures.cpp.o: \
- /home/runnindrk/Projects/N-Body/src/structures.cpp \
- /usr/include/stdc-predef.h \
- /home/runnindrk/Projects/N-Body/src/structures.hpp \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
+ /home/diogop/N-Body/src/structures.cpp /usr/include/stdc-predef.h \
+ /home/diogop/N-Body/src/structures.hpp /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

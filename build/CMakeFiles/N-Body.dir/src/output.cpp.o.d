@@ -1,8 +1,6 @@
 CMakeFiles/N-Body.dir/src/output.cpp.o: \
- /home/runnindrk/Projects/N-Body/src/output.cpp \
- /usr/include/stdc-predef.h \
- /home/runnindrk/Projects/N-Body/src/output.hpp \
- /usr/include/c++/11/iostream \
+ /home/diogop/N-Body/src/output.cpp /usr/include/stdc-predef.h \
+ /home/diogop/N-Body/src/output.hpp /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -161,8 +159,8 @@ CMakeFiles/N-Body.dir/src/output.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/runnindrk/Projects/N-Body/src/structures.hpp \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /home/diogop/N-Body/src/structures.hpp /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/uses_allocator.h \

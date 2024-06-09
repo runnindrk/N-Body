@@ -1,9 +1,10 @@
 #ifndef BARNES_HUT_TREE_HPP
 #define BARNES_HUT_TREE_HPP
 
+#include "structures.hpp"
 #include <iostream>
 #include <vector>
-#include "structures.hpp"
+#include <omp.h>
 
 // ----------------------------------------------------------------
 
@@ -11,7 +12,8 @@ class QuadTree
 {
     public:
 
-    QuadTree(std::vector<Particle>& bodies);
+    QuadTree();
+    QuadTree(double xNodeCenter, double yNodeCenter, double size, std::vector<Particle>& bodies);
 
     private:
 
@@ -24,6 +26,17 @@ class QuadTree
 
     std::unique_ptr<TreeNode> root;
     uint64_t numberOfNodes{};
+};
+
+class ParallelQuadTree
+{
+    public:
+
+    ParallelQuadTree(int numThreads, double xNodeCenter, double yNodeCenter, double size, std::vector<Particle>& bodies);
+
+    private: 
+
+
 };
 
 #endif

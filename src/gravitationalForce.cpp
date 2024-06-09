@@ -12,15 +12,12 @@ inline double ComputeDistanceSquared(double x1, double y1, double x2, double y2)
 inline void ComputeGravitationalForce(const Particle &p1, const Particle &p2, double &forceX,
                                       double &forceY)
 {
-    constexpr double G = 0.1;
-    constexpr double smoothingFactor = 0.1 * 0.1;
-
     double dx = p2.xPosition - p1.xPosition;
     double dy = p2.yPosition - p1.yPosition;
 
-    double distanceSquared = dx * dx + dy * dy + smoothingFactor;
+    double distanceSquared = dx * dx + dy * dy + SMOOTHING_FACTOR;
     double distance = std::sqrt(distanceSquared);
-    double force = G * p1.mass * p2.mass / distanceSquared;
+    double force = GRAVITATIONAL_CONSTANT * p1.mass * p2.mass / distanceSquared;
 
     forceX = force * dx / distance;
     forceY = force * dy / distance;
